@@ -1,0 +1,9 @@
+@import
+  './base/variables',
+  './base/urls.scss',
+  './base/common.scss';
+
+@import
+  './components/header',
+  './components/main',
+  './components/footer';

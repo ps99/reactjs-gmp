@@ -1,0 +1,43 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg-body: rgb(85 85 85);
+  --color-bg-main: rgb(35 35 35);
+  --color-text-main: rgb (255 255 255 / 0.7);
+  --color-text-title: rgb(246 82 97);
+  --border-radius: 4px;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 20px $font-family;
+  background: var(--color-bg-body);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+input,
+button {
+  font-family: $font-family;
+}
+
+.br4 {
+  border-radius: var(--border-radius);
+}
