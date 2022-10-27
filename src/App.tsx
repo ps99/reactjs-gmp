@@ -1,8 +1,8 @@
-import React from 'react';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
-import Footer from './components/Footer/Footer';
-import './scss/styles.scss';
+import React from "react";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+import "./scss/styles.scss";
 
 const App = () => {
   return (
@@ -12,6 +12,6 @@ const App = () => {
       <Footer />
     </>
   );
-}
+};
 
 export default App;
