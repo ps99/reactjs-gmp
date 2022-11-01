@@ -1,25 +1,26 @@
 import React from "react";
+import StyledHeader, { StyledLogo } from "./StyledHeader";
 import Logo from "../../images/header-logo.svg";
+import Button from "../Button";
+import HeaderSearch from "../HeaderSearch";
 
 const Header = () => {
+  const ADD_BUTTON_TITLE = "+ add movie";
+  const addHandler = (e: any) => {
+    console.log(e.currentTarget);
+  };
   return (
-    <header className="header">
-      <a href="/" className="header-logo">
+    <StyledHeader>
+      <StyledLogo href="/">
         <img src={Logo} alt="NetflixRoulette" />
-      </a>
-      <button className="header-add-new br4">+ add movie</button>
-      <div className="header-search">
-        <h3>Find your movie</h3>
-        <input
-          className="header-search__input br4"
-          placeholder="What do you want to watch?"
-          type="text"
-          name="search"
-          id="search"
-        />
-        <button className="header-search__button br4">Search</button>
-      </div>
-    </header>
+      </StyledLogo>
+      <Button
+        handler={addHandler}
+        classesList={["h-btn"]}
+        buttonText={ADD_BUTTON_TITLE}
+      />
+      <HeaderSearch />
+    </StyledHeader>
   );
 };
 
