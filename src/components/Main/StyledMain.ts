@@ -12,6 +12,34 @@ const StyledMain = styled.main`
   @media (min-width: 1200px)
     padding: 0 60px 20px;
   }
+
+  // TODO: split to new component
+  .movies-grid {
+    display: grid;
+    grid-gap: 4vw 4.5vw;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  .movie-item {
+    max-width: 322px;
+
+    &__image{
+      position: relative;
+      padding: 141.30% 0 0;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  
+  }
+}
 `;
 
 export const StyledNav = styled.nav`

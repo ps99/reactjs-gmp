@@ -1,13 +1,13 @@
-// import React from "react";
 import Logo from "../../images/header-logo.svg";
+import StyledFooter from "./StyledFooter";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <StyledFooter className="footer">
       <a href="/" className="footer-logo">
         <img src={Logo} alt="NetflixRoulette" />
       </a>
-    </footer>
+    </StyledFooter>
   );
 };
 

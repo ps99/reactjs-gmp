@@ -24,10 +24,12 @@ export const StyledTitle = styled.h3`
 `
 
 export const StyledInput = styled.input`
+  font-family: var(--font-family);
   flex-grow: 3;
   font-size: 1rem;
   padding: 16px;
   border: 0;
+  border-radius: 4px;
   color: rgb(255 255 255 / 0.3);
   mix-blend-mode: normal;
   background: rgb(50 50 50 / 0.7);

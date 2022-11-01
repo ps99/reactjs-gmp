@@ -59,6 +59,7 @@ export const StyledSummary = styled.summary`
 export const StyledList = styled.ul`
   position: absolute;
   z-index: 2;
+  width: 100%;
   padding-left: 96px;
   list-style: none;
 `

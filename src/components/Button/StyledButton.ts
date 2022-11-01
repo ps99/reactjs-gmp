@@ -4,7 +4,7 @@ import StyledSorter from "../Main/Sorter/StyledSorter"
 
 const StyledButton = styled.button`
   cursor: pointer;
-  font: 1rem/1.2 "Montserrat", sans-serif;
+  font: 1rem/1.2 var(--font-family);
   font-size: 1rem;
   border-radius: 4px;
   border: 0;
