@@ -1,10 +1,11 @@
 import StyledButton from "./StyledButton";
 
 export interface IButton {
-  value?: string | undefined;
+  value?: string;
   handler: any;
   classesList?: Array<string>;
   buttonText?: string | undefined;
+  variant?: string;
 }
 
 const Button = ({
@@ -12,12 +13,14 @@ const Button = ({
   handler,
   classesList = [],
   buttonText = value,
+  variant = "secondary",
 }: IButton) => {
   return (
     <StyledButton
       className={classesList.join(" ")}
       onPointerDown={handler}
       value={value}
+      variant={variant}
     >
       {buttonText}
     </StyledButton>

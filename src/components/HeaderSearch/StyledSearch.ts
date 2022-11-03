@@ -4,13 +4,14 @@ const StyledSearch = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  gap: 14px;
   padding: 150px 10vw 0;
   border: 0;
 
-  @media (min-width: 1200px)
+  @media (min-width: 1200px) {
     padding: 150px 120px 0;
   }
-`;
+`
 
 export const StyledTitle = styled.h3`
   width: 100%;

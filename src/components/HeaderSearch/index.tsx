@@ -18,8 +18,8 @@ const HeaderSearch = () => {
       />
       <Button
         handler={searchHandler}
-        classesList={["primary"]}
         buttonText={SEARCH_BUTTON_TITLE}
+        variant="primary"
       />
     </StyledSearch>
   );

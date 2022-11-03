@@ -1,4 +1,3 @@
-import Button from "../../Button";
 import StyledSorter, {
   StyledSummary,
   StyledList,
@@ -8,12 +7,13 @@ import StyledSorter, {
 const Sorter = ({ sortList, currentActive, onSorterClick }: any) => {
   const naviSorter = sortList.map((item: string, i: number) => {
     return (
-      <StyledListItem key={i}>
-        <Button
-          value={item}
-          handler={onSorterClick}
-          classesList={item === currentActive ? ["active"] : undefined}
-        />
+      <StyledListItem
+        key={i}
+        isActive={item === currentActive}
+        onPointerDown={onSorterClick}
+        data-name={item}
+      >
+        {item}
       </StyledListItem>
     );
   });

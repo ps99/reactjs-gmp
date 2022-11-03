@@ -13,7 +13,6 @@ const StyledHeader = styled.header`
     position: absolute;
     top: 20px;
     right: 56px;
-    color: var(--color-text-title);
   }
 `;
 

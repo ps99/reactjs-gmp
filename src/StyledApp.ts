@@ -14,6 +14,8 @@ const GlobalStyle = createGlobalStyle`
     --color-text-title: rgb(246 82 97);
     --border-radius: 4px;
     --font-family: "Montserrat",sans-serif;
+    --primary-btn-bg: rgb(96 96 96 / 0.68);
+    --primary-btn-color: 
   }
 
   a,

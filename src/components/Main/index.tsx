@@ -3,12 +3,12 @@ import Filter from "./Filter";
 import Sorter from "./Sorter";
 import MoviesList from "./MoviesList";
 import movies from "../../data.json";
-import { IMovieCard } from "./MovieCard";
+import { IMovieListItem } from "./MoviesList";
 import StyledMain, { StyledNav, StyledStatusBar } from "./StyledMain";
 
 const filters = ["all", "documentary", "comedy", "horror", "crime"];
 const sorts = ["release", "rating", "title"];
-const json_data = ((data: any): IMovieCard[] => {
+const json_data = ((data: any): IMovieListItem[] => {
   return data.data;
 })(movies);
 
@@ -27,12 +27,16 @@ const Main = () => {
         <Filter
           filtersList={filters}
           currentActive={filterState}
-          onGenreClick={(e: any) => setFilterState(e.currentTarget.value)}
+          onGenreClick={(e: any) =>
+            setFilterState(e.currentTarget.getAttribute("data-name"))
+          }
         />
         <Sorter
           sortList={sorts}
           currentActive={sortState}
-          onSorterClick={(e: any) => setSortState(e.currentTarget.value)}
+          onSorterClick={(e: any) =>
+            setSortState(e.currentTarget.getAttribute("data-name"))
+          }
         />
       </StyledNav>
       <StyledStatusBar>

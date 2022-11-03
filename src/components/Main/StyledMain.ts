@@ -9,19 +9,14 @@ const StyledMain = styled.main`
   padding: 0 5vw 20px;
   background: var(--color-bg-main);
 
-  @media (min-width: 1200px)
+  @media (min-width: 1200px) {
     padding: 0 60px 20px;
   }
 
   // TODO: split to new component
   .movies-grid {
-    display: grid;
-    grid-gap: 4vw 4.5vw;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
   .movie-item {
-    max-width: 322px;
 
     &__image{
       position: relative;
@@ -63,6 +58,10 @@ export const StyledStatusBar = styled.div`
   font-size: 20px;
   line-height: 1.2;
   color: #fff;
+`
+
+export const StyledMovieList = styled.ul`
+//
 `
 
 export default StyledMain;

@@ -10,6 +10,7 @@ const StyledSorter = styled.details`
 `;
 
 export const StyledSummary = styled.summary`
+width: 260px;
   font-size: 0.8rem;
   line-height: 1.25;
   letter-spacing: 1px;
@@ -64,8 +65,20 @@ export const StyledList = styled.ul`
   list-style: none;
 `
 
-export const StyledListItem = styled.li`
+export const StyledListItem = styled.li<{isActive: boolean}>`
+  display: block;
+  width: 100%;
+  padding: 4px;
+  border: 0;
+  font-size: 0.8rem;
+  text-align: left;
+  color: #ccc;
+  text-transform: capitalize;
+  background: #232323;
 
+  &[data-name=release]::after {
+  content: ' Date';
+}
 `
 
 export default StyledSorter;
