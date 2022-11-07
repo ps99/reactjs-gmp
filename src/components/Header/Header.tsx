@@ -1,8 +1,8 @@
 import React from "react";
 import StyledHeader, { StyledLogo } from "./StyledHeader";
-import Logo from "../../images/header-logo.svg";
+import Logo from "../../assets/images/header-logo.svg";
 import Button from "../Button";
-import HeaderSearch from "../HeaderSearch";
+import HeaderSearch from "./Search";
 
 const Header = () => {
   const ADD_BUTTON_TITLE = "+ add movie";

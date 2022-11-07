@@ -1,21 +1,9 @@
-// import reset from 'styled-reset';
+import * as T from './shared/theme'
 import { createGlobalStyle } from 'styled-components';
-
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {
     box-sizing: border-box;
-  }
-
-  :root {
-    --color-bg-body: rgb(85 85 85);
-    --color-bg-main: rgb(35 35 35);
-    --color-text-main: rgb (255 255 255 / 0.7);
-    --color-text-title: rgb(246 82 97);
-    --border-radius: 4px;
-    --font-family: "Montserrat",sans-serif;
-    --primary-btn-bg: rgb(96 96 96 / 0.68);
-    --primary-btn-color: 
   }
 
   a,
@@ -32,11 +20,11 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: var(--font-family);
+    font-family: ${T.font.family};
     letter-spacing: .05em;
     line-height: 1.2;
     min-width: 320px;
-    background: var(--color-bg-body);
+    background: ${T.color.bodyBg};
   }
 
   #root {

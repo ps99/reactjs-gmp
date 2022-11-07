@@ -1,10 +1,10 @@
-import Logo from "../../images/header-logo.svg";
+import Logo from "../../assets/images/header-logo.svg";
 import StyledFooter from "./StyledFooter";
 
 const Footer = () => {
   return (
-    <StyledFooter className="footer">
-      <a href="/" className="footer-logo">
+    <StyledFooter>
+      <a href="/">
         <img src={Logo} alt="NetflixRoulette" />
       </a>
     </StyledFooter>

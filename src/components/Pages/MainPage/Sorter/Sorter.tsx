@@ -2,10 +2,12 @@ import StyledSorter, {
   StyledSummary,
   StyledList,
   StyledListItem,
+  StyledArrow,
 } from "./StyledSorter";
+import * as I from "./Sorter.type";
 
-const Sorter = ({ sortList, currentActive, onSorterClick }: any) => {
-  const naviSorter = sortList.map((item: string, i: number) => {
+const Sorter = ({ sortList, currentActive, onSorterClick }: I.ISorter) => {
+  const naviSorter = sortList.map((item, i) => {
     return (
       <StyledListItem
         key={i}
@@ -21,9 +23,8 @@ const Sorter = ({ sortList, currentActive, onSorterClick }: any) => {
   return (
     <StyledSorter>
       <StyledSummary>
-        <span>Sort by</span>
-        {currentActive}
-        <i></i>
+        <span>{currentActive}</span>
+        <StyledArrow />
       </StyledSummary>
       <StyledList>{naviSorter}</StyledList>
     </StyledSorter>

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import ErrorBoundary from "./components/ErrorBoundary";
-import Main from "./components/Main";
+import MainPage from "./components/Pages/MainPage";
 import Footer from "./components/Footer";
 import StyledApp from "./StyledApp";
 
@@ -11,7 +11,7 @@ const App = () => {
       <StyledApp />
       <Header />
       <ErrorBoundary>
-        <Main />
+        <MainPage />
       </ErrorBoundary>
       <Footer />
     </>

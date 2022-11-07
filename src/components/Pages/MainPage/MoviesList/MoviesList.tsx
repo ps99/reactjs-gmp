@@ -1,30 +1,12 @@
-import StyledMovieList, {
-  StyledMovieListItem,
+import StyledMoviesList, {
+  StyledMoviesListItem,
   StyledImageWrapper,
   StyledTextWrapper,
   StyledContextMenu,
 } from "./StyledMoviesList";
+import * as I from "./MoviesList.type";
 
-export interface IMovieListItem {
-  id?: number;
-  budget?: number;
-  genres?: Array<string>;
-  overview?: string;
-  release_date?: string;
-  revenue?: number;
-  runtime?: number;
-  tagline?: string;
-  title?: string;
-  vote_average?: number;
-  vote_count?: number;
-  poster_path?: string;
-}
-
-export interface IMovieList {
-  moviesList: IMovieListItem[];
-}
-
-const MoviesList = ({ moviesList }: IMovieList) => {
+const MoviesList = ({ moviesList }: I.IMoviesList) => {
   const moviesCards = moviesList.map((item) => {
     const {
       id,
@@ -42,7 +24,7 @@ const MoviesList = ({ moviesList }: IMovieList) => {
     } = item;
 
     return (
-      <StyledMovieListItem key={id}>
+      <StyledMoviesListItem key={id}>
         <StyledImageWrapper>
           <img src={poster_path} alt={title} />
           <StyledContextMenu />
@@ -57,11 +39,11 @@ const MoviesList = ({ moviesList }: IMovieList) => {
             <i>{genres?.join(" ")}</i>
           </li>
         </StyledTextWrapper>
-      </StyledMovieListItem>
+      </StyledMoviesListItem>
     );
   });
 
-  return <StyledMovieList>{moviesCards}</StyledMovieList>;
+  return <StyledMoviesList>{moviesCards}</StyledMoviesList>;
 };
 
 export default MoviesList;

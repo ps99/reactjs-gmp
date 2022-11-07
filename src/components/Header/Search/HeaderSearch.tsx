@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import Button from "../../Button";
 import StyledSearch, { StyledInput, StyledTitle } from "./StyledSearch";
 
 const HeaderSearch = () => {

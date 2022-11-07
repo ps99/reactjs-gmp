@@ -1,6 +1,5 @@
+import * as T from '../../shared/theme'
 import styled, {css} from "styled-components";
-import StyledFilter from "../Main/Filter/StyledFilter";
-import StyledSorter from "../Main/Sorter/StyledSorter"
 
 const StyledNaviButton:any = css`
   display: block;
@@ -16,7 +15,7 @@ const StyledNaviButton:any = css`
 
 const StyledButton = styled.button<{variant: string | undefined}>`
   cursor: pointer;
-  font: 1rem/1.2 var(--font-family);
+  font: 1rem/1.2 ${T.font.family};
   font-size: 1rem;
   border-radius: 4px;
   border: 0;
@@ -29,14 +28,14 @@ const StyledButton = styled.button<{variant: string | undefined}>`
       case "primary":
         return css`
           color: #fff;
-          background: var(--color-text-title);
+          background: ${T.color.title};
         `;
       case "filter":
         return {StyledNaviButton}
       default:
         return css`
-          color: var(--color-text-title);
-          background: rgb(96 96 96 / 0.68);
+          color: ${T.color.text};
+          background: ${T.color.btnBg};
         `;
     }
   }}

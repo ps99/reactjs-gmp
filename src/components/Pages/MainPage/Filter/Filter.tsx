@@ -1,7 +1,7 @@
-import Button from "../../Button";
 import StyledFilter, { StyledFilterItem } from "./StyledFilter";
+import * as I from "./Filter.type";
 
-const Filter = ({ filtersList, currentActive, onGenreClick }: any) => {
+const Filter = ({ filtersList, currentActive, onGenreClick }: I.IFilter) => {
   const naviFilter = filtersList.map((item: string, i: number) => {
     return (
       <StyledFilterItem

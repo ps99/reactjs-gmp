@@ -1,6 +1,7 @@
+import * as T from "../../../../shared/theme";
 import styled from "styled-components";
 
-const StyledMovieList = styled.ul`
+const StyledMoviesList = styled.ul`
   display: grid;
   grid-gap: 4vw 4.5vw;
   grid-template-rows: auto;
@@ -9,7 +10,7 @@ const StyledMovieList = styled.ul`
   padding: 0;
 `
 
-export const StyledMovieListItem = styled.li`
+export const StyledMoviesListItem = styled.li`
   max-width: 322px;
 `
 
@@ -46,21 +47,21 @@ export const StyledTextWrapper = styled.ul`
     margin: 0 auto 0 0;
     padding: 1px 0 0;
     font-size: 0.9rem;
-    color: rgb(255 255 255 / 0.7);
+    color: ${T.color.text};
   }
 
   span {
     min-width: 50px;
     margin-left: 8px;
     padding: 4px 8px;
-    color: rgb(250 250 250 / 0.7);
+    color: ${T.color.text};
     text-align: center;
-    border: solid 1px rgb(151 151 151 / 0.5);
+    border: solid 1px ${T.color.border};
     border-radius: 4px;
   }
 
   i {
-    color: rgb(250 250 250 / 0.5);
+    color: ${T.iColor.white(0.5)};
     font-style: normal;
   }
 `
@@ -80,8 +81,8 @@ export const StyledContextMenu = styled.a`
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(42 32 45 / 1);
-    box-shadow: 0 0 4px 0 rgb(0 0 0 / 0.2);
+    background-color: ${T.color.contextMenuBg};
+    box-shadow: 0 0 4px 0 ${T.iColor.black(0.2)};
     border-radius: 18px;
     content: '';
   }
@@ -99,4 +100,4 @@ export const StyledContextMenu = styled.a`
 
 `
 
-export default StyledMovieList;
+export default StyledMoviesList;
