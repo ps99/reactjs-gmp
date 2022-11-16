@@ -35,35 +35,34 @@ export const StyledTextWrapper = styled.ul`
   padding: 11px 0 0;
   list-style: none;
 
-  & > li {
+  li {
     display: flex;
     align-items: flex-start;
     padding: 8px 0 0;
     font-size: 0.7rem;
     letter-spacing: 0;
   }
+`
 
-  h2 {
-    margin: 0 auto 0 0;
-    padding: 1px 0 0;
-    font-size: 0.9rem;
-    color: ${T.color.text};
-  }
+export const StyledTitle = styled.h2`
+  margin: 0 auto 0 0;
+  padding: 1px 0 0;
+  font-size: 0.9rem;
+  color: ${T.color.text};
+`
 
-  span {
-    min-width: 50px;
-    margin-left: 8px;
-    padding: 4px 8px;
-    color: ${T.color.text};
-    text-align: center;
-    border: solid 1px ${T.color.border};
-    border-radius: 4px;
-  }
+export const StyledDate = styled.span`
+  min-width: 50px;
+  margin-left: 8px;
+  padding: 4px 8px;
+  color: ${T.color.text};
+  text-align: center;
+  border: solid 1px ${T.color.border};
+  border-radius: 4px;
+`
 
-  i {
-    color: ${T.iColor.white(0.5)};
-    font-style: normal;
-  }
+export const StyledGenre = styled.span`
+  color: ${T.iColor.white(0.5)};
 `
 
 export const StyledContextMenu = styled.a`

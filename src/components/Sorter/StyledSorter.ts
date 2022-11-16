@@ -12,7 +12,7 @@ const StyledSorter = styled.details`
 `;
 
 export const StyledSummary = styled.summary`
-width: 260px;
+  width: 260px;
   font-size: 0.8rem;
   line-height: 1.25;
   letter-spacing: 1px;
@@ -82,8 +82,8 @@ export const StyledListItem = styled.li<{isActive: boolean}>`
   background: ${T.color.mainBg};
 
   &[data-name=release]::after {
-  content: ' Date';
-}
+    content: ' Date';
+  }
 `
 
 export default StyledSorter;

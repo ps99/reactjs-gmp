@@ -3,6 +3,9 @@ import StyledMoviesList, {
   StyledImageWrapper,
   StyledTextWrapper,
   StyledContextMenu,
+  StyledTitle,
+  StyledDate,
+  StyledGenre,
 } from "./StyledMoviesList";
 import * as I from "./MoviesList.type";
 
@@ -31,12 +34,12 @@ const MoviesList = ({ moviesList }: I.IMoviesList) => {
         </StyledImageWrapper>
         <StyledTextWrapper>
           <li>
-            <h2>{title}</h2>
-            <span>{release_date?.split("-")[0]}</span>
+            <StyledTitle>{title}</StyledTitle>
+            <StyledDate>{release_date?.split("-")[0]}</StyledDate>
           </li>
 
           <li>
-            <i>{genres?.join(" ")}</i>
+            <StyledGenre>{genres?.join(" ")}</StyledGenre>
           </li>
         </StyledTextWrapper>
       </StyledMoviesListItem>

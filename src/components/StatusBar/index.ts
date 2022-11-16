@@ -1,2 +1,1 @@
-import StatusBar from "./StatusBar";
-export default StatusBar;
+export { default } from "./StatusBar";
