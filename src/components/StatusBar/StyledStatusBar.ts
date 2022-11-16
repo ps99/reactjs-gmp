@@ -1,4 +1,4 @@
-import * as T from '../../../../shared/theme'
+import * as T from '../../shared/theme'
 import styled from "styled-components";
 
 export const StyledStatusBar = styled.div`

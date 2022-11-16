@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Filter from "./Filter";
-import Sorter from "./Sorter";
-import StatusBar from "./StatusBar";
-import MoviesList from "./MoviesList";
-import movies from "../../../data.json";
-import * as I from "./MoviesList/MoviesList.type";
+import Filter from "../../components/Filter";
+import Sorter from "../../components/Sorter";
+import StatusBar from "../../components/StatusBar";
+import MoviesList from "../../components/MoviesList";
+import movies from "../../data.json";
+import * as I from "../../components/MoviesList/MoviesList.type";
 import StyledMain, { StyledNav } from "./StyledMain";
 
 const filters = ["all", "documentary", "comedy", "horror", "crime"];
