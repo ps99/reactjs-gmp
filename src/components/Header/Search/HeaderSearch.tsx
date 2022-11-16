@@ -7,6 +7,7 @@ const HeaderSearch = () => {
   const searchHandler = (e: any) => {
     console.log(e.currentTarget);
   };
+
   return (
     <StyledSearch>
       <StyledTitle>Find your movie</StyledTitle>

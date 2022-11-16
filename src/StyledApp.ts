@@ -1,4 +1,4 @@
-import * as T from './shared/theme'
+import * as T from './theme'
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`

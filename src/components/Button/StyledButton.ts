@@ -1,4 +1,4 @@
-import * as T from '../../shared/theme'
+import * as T from '../../theme'
 import styled, {css} from "styled-components";
 
 const StyledNaviButton:any = css`

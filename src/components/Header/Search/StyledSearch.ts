@@ -1,7 +1,7 @@
-import * as T from '../../../shared/theme'
+import * as T from '../../../theme'
 import styled from "styled-components";
 
-const StyledSearch = styled.div`
+export const StyledSearch = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;

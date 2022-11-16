@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import HeaderBG from "../../assets/images/header-bg.png";
 
-const StyledHeader = styled.header`
+export const StyledHeader = styled.header`
   position: relative;
   width: 100%;
   max-width: 1200px;
