@@ -22,7 +22,7 @@ const MainPage = () => {
     setCountState(movies.totalAmount);
   }, []);
 
-  const genreHandler = (e: React.PointerEvent<HTMLElement>) => {
+  const genreHandler = (e: any) => {
     setFilterState(e.currentTarget.getAttribute("data-name"));
   };
 
