@@ -34,14 +34,14 @@ export const StyledImageWrapper = styled.div`
 export const StyledTextWrapper = styled.ul`
   padding: 11px 0 0;
   list-style: none;
+`
 
-  li {
-    display: flex;
-    align-items: flex-start;
-    padding: 8px 0 0;
-    font-size: 0.7rem;
-    letter-spacing: 0;
-  }
+export const StyledTextWrapperLine = styled.li`
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0 0;
+  font-size: 0.7rem;
+  letter-spacing: 0;
 `
 
 export const StyledTitle = styled.h2`

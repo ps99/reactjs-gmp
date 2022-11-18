@@ -1,6 +1,7 @@
 import StyledMoviesList, {
   StyledMoviesListItem,
   StyledImageWrapper,
+  StyledTextWrapperLine,
   StyledTextWrapper,
   StyledContextMenu,
   StyledTitle,
@@ -33,14 +34,14 @@ const MoviesList = ({ moviesList }: I.IMoviesList) => {
           <StyledContextMenu />
         </StyledImageWrapper>
         <StyledTextWrapper>
-          <li>
+          <StyledTextWrapperLine>
             <StyledTitle>{title}</StyledTitle>
             <StyledDate>{release_date?.split("-")[0]}</StyledDate>
-          </li>
+          </StyledTextWrapperLine>
 
-          <li>
+          <StyledTextWrapperLine>
             <StyledGenre>{genres?.join(" ")}</StyledGenre>
-          </li>
+          </StyledTextWrapperLine>
         </StyledTextWrapper>
       </StyledMoviesListItem>
     );

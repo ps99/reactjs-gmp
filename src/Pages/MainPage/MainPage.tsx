@@ -9,7 +9,7 @@ import StyledMain, { StyledNav } from "./StyledMain";
 
 const filters = ["all", "documentary", "comedy", "horror", "crime"];
 const sorts = ["release", "rating", "title"];
-const json_data = ((data: any): I.IMoviesListItem[] => {
+const jsonData = ((data: any): I.IMoviesListItem[] => {
   return data.data;
 })(movies);
 
@@ -22,26 +22,30 @@ const MainPage = () => {
     setCountState(movies.totalAmount);
   }, []);
 
+  const genreHandler = (e: React.PointerEvent<HTMLElement>) => {
+    setFilterState(e.currentTarget.getAttribute("data-name"));
+  };
+
+  const sorterHandler = (e: any) => {
+    setSortState(e.currentTarget.getAttribute("data-name"));
+  };
+
   return (
     <StyledMain data-sort={sortState} data-filter={filterState}>
       <StyledNav>
         <Filter
           filtersList={filters}
           currentActive={filterState}
-          onGenreClick={(e: any) =>
-            setFilterState(e.currentTarget.getAttribute("data-name"))
-          }
+          onGenreClick={genreHandler}
         />
         <Sorter
           sortList={sorts}
           currentActive={sortState}
-          onSorterClick={(e: any) =>
-            setSortState(e.currentTarget.getAttribute("data-name"))
-          }
+          onSorterClick={sorterHandler}
         />
       </StyledNav>
       <StatusBar quantity={countState} />
-      <MoviesList moviesList={json_data} />
+      <MoviesList moviesList={jsonData} />
     </StyledMain>
   );
 };

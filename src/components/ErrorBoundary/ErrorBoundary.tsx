@@ -3,9 +3,9 @@ import React, { ReactNode } from "react";
 const ErrorBoundary = (props: any) => {
   const ErrorMessage = () => <h2>Oops, Error Happend!</h2>;
 
-  let isEveryThingOk = true;
+  let isError = false;
 
-  return <>{isEveryThingOk ? props.children : <ErrorMessage />}</>;
+  return <>{isError ? <ErrorMessage /> : props.children}</>;
 };
 
 export default ErrorBoundary;
