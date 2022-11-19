@@ -1,5 +1,5 @@
 export interface IFilter {
-  filtersList: readonly string[];
+  filtersList: ReadonlyArray<string>;
   currentActive: string;
   onGenreClick: any;
 }
