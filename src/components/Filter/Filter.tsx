@@ -1,7 +1,7 @@
 import StyledFilter, { StyledFilterItem } from "./StyledFilter";
-import * as I from "./Filter.type";
+import { IFilter } from "./Filter.type";
 
-const Filter = ({ filtersList, currentActive, onGenreClick }: I.IFilter) => {
+const Filter = ({ filtersList, currentActive, onGenreClick }: IFilter) => {
   const naviFilter = filtersList.map((item: string) => {
     return (
       <StyledFilterItem

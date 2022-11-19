@@ -8,9 +8,9 @@ import StyledMoviesList, {
   StyledDate,
   StyledGenre,
 } from "./StyledMoviesList";
-import * as I from "./MoviesList.type";
+import { IMoviesList } from "./MoviesList.type";
 
-const MoviesList = ({ moviesList }: I.IMoviesList) => {
+const MoviesList = ({ moviesList }: IMoviesList) => {
   const moviesCards = moviesList.map((item) => {
     const {
       id,

@@ -4,9 +4,9 @@ import StyledSorter, {
   StyledListItem,
   StyledArrow,
 } from "./StyledSorter";
-import * as I from "./Sorter.type";
+import { ISorter } from "./Sorter.type";
 
-const Sorter = ({ sortList, currentActive, onSorterClick }: I.ISorter) => {
+const Sorter = ({ sortList, currentActive, onSorterClick }: ISorter) => {
   const naviSorter = sortList.map((item, i) => {
     return (
       <StyledListItem
