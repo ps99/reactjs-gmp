@@ -1,4 +1,4 @@
-import * as T from '../../theme'
+import {color} from '../../theme'
 import styled from "styled-components";
 
 const StyledFilter = styled.ul`
@@ -15,7 +15,7 @@ export const StyledFilterItem = styled.li<{isActive: boolean}>`
   padding: 20px 0;
   font-size: 0.8rem;
   cursor: pointer;
-  color: ${T.color.naviLink};
+  color: ${color.naviLink};
   text-transform: uppercase;
 
   &::after {
@@ -27,11 +27,11 @@ export const StyledFilterItem = styled.li<{isActive: boolean}>`
     height: 3px;
     transition: all 0.5s ease;
     content: '';
-    ${({isActive}) => (isActive ? `background: ${T.color.title}` : "")}
+    ${({isActive}) => (isActive ? `background: ${color.title}` : "")}
   }
 
   &:hover::after {
-    background: ${T.color.title};
+    background: ${color.title};
   }
 `
 

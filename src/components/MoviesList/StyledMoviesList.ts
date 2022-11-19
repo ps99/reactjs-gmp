@@ -1,4 +1,4 @@
-import * as T from "../../theme";
+import {color, iColor} from "../../theme";
 import styled from "styled-components";
 
 const StyledMoviesList = styled.ul`
@@ -48,21 +48,21 @@ export const StyledTitle = styled.h2`
   margin: 0 auto 0 0;
   padding: 1px 0 0;
   font-size: 0.9rem;
-  color: ${T.color.text};
+  color: ${color.text};
 `
 
 export const StyledDate = styled.span`
   min-width: 50px;
   margin-left: 8px;
   padding: 4px 8px;
-  color: ${T.color.text};
+  color: ${color.text};
   text-align: center;
-  border: solid 1px ${T.color.border};
+  border: solid 1px ${color.border};
   border-radius: 4px;
 `
 
 export const StyledGenre = styled.span`
-  color: ${T.iColor.white(0.5)};
+  color: ${iColor.white(0.5)};
 `
 
 export const StyledContextMenu = styled.a`
@@ -80,8 +80,8 @@ export const StyledContextMenu = styled.a`
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: ${T.color.contextMenuBg};
-    box-shadow: 0 0 4px 0 ${T.iColor.black(0.2)};
+    background-color: ${color.contextMenuBg};
+    box-shadow: 0 0 4px 0 ${iColor.black(0.2)};
     border-radius: 18px;
     content: '';
   }

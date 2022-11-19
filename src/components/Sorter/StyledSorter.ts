@@ -1,7 +1,7 @@
-import * as T from '../../theme'
+import {color} from '../../theme'
 import styled from "styled-components";
 
-const white = T.color.naviLink
+const white = color.naviLink
 
 const StyledSorter = styled.details`
   position: relative;
@@ -77,9 +77,9 @@ export const StyledListItem = styled.li<{isActive: boolean}>`
   border: 0;
   font-size: 0.8rem;
   text-align: left;
-  color: ${T.color.text};
+  color: ${color.text};
   text-transform: capitalize;
-  background: ${T.color.mainBg};
+  background: ${color.mainBg};
 
   &[data-name=release]::after {
     content: ' Date';

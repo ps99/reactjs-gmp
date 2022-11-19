@@ -1,4 +1,4 @@
-import * as T from '../../theme'
+import {color, font} from '../../theme'
 import styled, {css} from "styled-components";
 
 const StyledNaviButton:any = css`
@@ -15,7 +15,7 @@ const StyledNaviButton:any = css`
 
 const StyledButton = styled.button<{variant: string | undefined}>`
   cursor: pointer;
-  font: 1rem/1.2 ${T.font.family};
+  font: 1rem/1.2 ${font.family};
   font-size: 1rem;
   border-radius: 4px;
   border: 0;
@@ -28,14 +28,14 @@ const StyledButton = styled.button<{variant: string | undefined}>`
       case "primary":
         return css`
           color: #fff;
-          background: ${T.color.title};
+          background: ${color.title};
         `;
       case "filter":
         return {StyledNaviButton}
       default:
         return css`
-          color: ${T.color.text};
-          background: ${T.color.btnBg};
+          color: ${color.text};
+          background: ${color.btnBg};
         `;
     }
   }}

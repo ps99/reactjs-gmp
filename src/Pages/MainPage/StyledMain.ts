@@ -1,4 +1,4 @@
-import * as T from '../../theme'
+import {color} from '../../theme'
 import styled from "styled-components";
 
 const StyledMain = styled.main`
@@ -8,7 +8,7 @@ const StyledMain = styled.main`
   flex: 1 0 auto;
   margin: 10px auto 0;
   padding: 0 5vw 20px;
-  background: ${T.color.mainBg};
+  background: ${color.mainBg};
 
   @media (min-width: 1200px) {
     padding: 0 60px 20px;

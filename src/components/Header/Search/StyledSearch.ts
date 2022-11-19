@@ -1,4 +1,4 @@
-import * as T from '../../../theme'
+import {font, color} from '../../../theme'
 import styled from "styled-components";
 
 export const StyledSearch = styled.div`
@@ -26,18 +26,18 @@ export const StyledTitle = styled.h3`
 `
 
 export const StyledInput = styled.input`
-  font-family: ${T.font.family};
+  font-family: ${font.family};
   flex-grow: 3;
   font-size: 1rem;
   padding: 16px;
   border: 0;
   border-radius: 4px;
-  color: ${T.color.text};
+  color: ${color.text};
   mix-blend-mode: normal;
-  background: ${T.color.inputBg};
+  background: ${color.inputBg};
 
   &::placeholder {
-    color: ${T.color.inputPlaceholder};
+    color: ${color.inputPlaceholder};
   }
 `
 
