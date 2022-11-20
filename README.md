@@ -1,6 +1,4 @@
-## Tech Debt
-
-[Link](./TechDebt.md)
+[Tech Debt](./TechDebt.md)
 
 # Getting Started with Create React App
 
